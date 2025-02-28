@@ -1,0 +1,21 @@
+[package]
+name = "yogachain-networking"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Async and Networking
+tokio = { version = "1", features = ["full"] }
+tokio-stream = "0.1"
+async-trait = "0.1.77"
+
+# Serialization & Messaging
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# Secure Transport & Cryptography
+pqcrypto-kyber = "0.5.0"
+pqcrypto-dilithium = "0.5.0"
+
+# Blockchain Integration (for syncing and gossip protocol)
+yogachain-core = { path = "../core" }
