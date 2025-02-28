@@ -18,4 +18,4 @@ pqcrypto-kyber = "0.5.0"
 pqcrypto-dilithium = "0.5.0"
 
 # Blockchain Integration (for syncing and gossip protocol)
-yogachain-core = { path = "../core" }
+yogachain-core = { path = "../yogachain-common" }
